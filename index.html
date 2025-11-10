@@ -4,40 +4,17 @@
   <meta charset="utf-8" />
   <title>Ball Escape — Canvas Version</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <style>
-    html, body { height: 100%; margin: 0; background:#0b0d12; color:#e8eaed; font-family: system-ui, Arial; }
-    header {
-      background-color: #004080;
-      color: white;
-      padding: 20px;
-      text-align: center;
-     }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-     }
-    .wrap { display:grid; place-items:center; height:100%; gap:14px; }
-    canvas { background:#0f131a; border-radius:18px; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
-    .ui { display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:center; }
-    button, input[type=range] {
-      background:#171c24; color:#e8eaed; border:1px solid #2a3342; border-radius:10px;
-      padding:8px 12px; cursor:pointer; outline:none;
-    }
-    button:hover { background:#1b222c; }
-    .flag { padding:4px 10px; border-radius: 999px; background:#132818; border:1px solid #1c3a24; color:#9bffb2; display:none; }
-    .flag.show { display:inline-block; }
-  </style>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <header>
-        <div class="header-container">
+        <div class="header">
+  <div class="header-content">
     <img src="images/shodan.jpg" alt="Shodan Logo" class="logo">
-    <div class="header-text">
-        <h1>Shodan Dev</h1>
-        <p>Gamer Become Developer</p>
-        </div>
-    </div>
+    <h1>Shodan Dev</h1>
+  </div>
+  <p class="subtitle">Gamer Become Developer</p>
+</div>
     </header>
   <div class="wrap">
     <canvas id="c" width="640" height="640"></canvas>
