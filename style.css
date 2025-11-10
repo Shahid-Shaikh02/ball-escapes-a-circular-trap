@@ -24,6 +24,22 @@ html, body { height: 100%; margin: 0; background:#0b0d12; color:#e8eaed; font-fa
   font-size: 2em;
 }
 
+.header-content h1 a {
+  margin: 0;
+  display: inline-block;
+  font-size: 2em;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 150ms ease;     
+}
+
+.header-content h1 a:hover {
+color: #2e7bff; /* blue on hover */
+}
+
+.header-content h1 a:active {
+color: #ff3b30; /* red on click */
+}
 .subtitle {
   margin: 0;
   font-size: 1.2em;
